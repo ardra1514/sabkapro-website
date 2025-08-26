@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiscal Template</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+  <div class="logo">
+    <img src="logo sabka.png" alt="Fiscal Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#"><b>Home</b></a></li>
+      <li><a href="#"><b>About Us</b></a></li>
+      <li><a href="#"><b>Sabka World</b></a></li>
+      <li><a href="#"><b>Emforx Solution</b></a></li>
+      <li><a href="#"><b>Contact Us</b></a></li>
+    </ul>
+  </nav>
+  <div class="nav-actions">
+    <button class="login-btn">Login</button>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+   <!-- Left Card -->
+
+
+<div class="hero-left">
+  
+  <span class="badge">Next group starts in 3 days!</span>
+  <div class="hero-content">
+    <div class="text-block">
+      <h1>Book Your Seats NOW</h1>
+      <button class="btn">Get started →</button>
+    </div>
+    <div class="illustration">
+      <img src="WhatsApp Image 2025-08-22 at 16.32.44_393a43db.jpg" class="rotate" alt="Finance Illustration">
+    </div>
+  </div>
+</div>
+
+
+
+
+    <!-- Right Cards -->
+    <div class="hero-right">
+      <div class="box orange" id="bookSeat">
+        
+        <h3><b>Employee</b></h3>
+        <p>Welcome to the Employee Portal </p>
+          <button class="btn">Click Here</button>
+      </div>
+      
+      <div class="box black" id="signUp">
+        <h3>Candidate</h3>
+         <div class="avatars">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+          <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="">
+          <span>+56 mentors</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script>
+    document.getElementById("bookSeat").addEventListener("click", () => {
+      window.location.href = "/book-seat"; // backend route
+    });
+
+    document.getElementById("signUp").addEventListener("click", () => {
+      window.location.href = "/sign-up"; // backend route
+    });
+
+    document.querySelector(".login-btn").addEventListener("click", () => {
+      window.location.href = "/login"; // backend route
+    });
+  </script>
+</body>
+</html>
