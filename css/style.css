@@ -291,3 +291,87 @@ button:hover i, button:focus i, button:active i {
 .signup-text a:hover {
   text-decoration: underline;
 }
+/* Extra Responsive Tweaks */
+
+/* Tablets (max-width: 991px) */
+@media (max-width: 991px) {
+  .inner {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .inner .image-holder {
+    width: 100%;
+    height: 250px;
+  }
+
+  .inner form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-control {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .inner {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .inner h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    font-size: 13px;
+    height: 38px;
+  }
+
+  .extra-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .signup-text {
+    font-size: 12px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* Very small screens (max-width: 400px) */
+@media (max-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+
+  .inner h3 {
+    font-size: 18px;
+  }
+
+  .form-control {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 13px;
+    height: 40px;
+  }
+}
