@@ -7,57 +7,55 @@
 }
 
 body {
-  background-color:rgb(236, 235, 235);
-
-  
-  
+  background-color: rgb(236, 235, 235);
 }
 
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* logo | nav | login */
   align-items: center;
-  padding: 1.0rem 3rem;
-  background-color:rgb(236, 235, 235);
+  padding: 1rem 3rem;
+  background-color: rgb(236, 235, 235);
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
-
 .logo img {
+  height: 80px;
   width: auto;
-  height: 80px;  /* Keep aspect ratio */
-  padding-left: 50px;
-}
-.nav-actions{
-  padding-right: 50px;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
   gap: 2rem;
-  padding-left: 350px;
+  justify-content: center; /* center links */
+  padding-left: 0;
+  margin: 0;
 }
 
 .navbar a {
   text-decoration: none;
   color: #030303;
-
   font-weight: 500;
+}
+
+.nav-actions {
+  text-align: right;
 }
 
 .login-btn {
   padding: 8px 16px;
   border-radius: 30px;
   border: 1px solid #0e0e0e;
-  color:rgb(4, 4, 4);
+  color: rgb(4, 4, 4);
   cursor: pointer;
   font-weight: 500;
   transition: all 0.3s ease;
 }
+
 .login-btn:hover {
   background: #090909;
   color: #f0eaea;
@@ -71,23 +69,18 @@ body {
   max-width: 1300px;
   margin: 3rem auto;
   min-height: 60vh;
-
 }
 
 /* Left Card */
-
 .hero-left {
-  
-  position: relative;   /* makes it a positioning container */
-  background-color:white;
+  position: relative;
+  background-color: white;
   padding: 2.5rem;
   border-radius: 20px;
-  min-height: 350px;    /* keep height stable */
-  overflow: hidden;     /* hide image overflow */
-  padding-left: 70px;
+  min-height: 350px;
+  overflow: hidden;
   padding-top: 50px;
   height: 580px;
- 
 }
 
 .hero-left h1 {
@@ -96,10 +89,9 @@ body {
   max-width: 400px;
   z-index: 2;
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
+  padding: 20px 0;
 }
+
 .hero-left .badge {
   background: #ffe3e3;
   padding: 6px 14px;
@@ -107,9 +99,7 @@ body {
   font-size: 0.85rem;
   color: #c00;
   width: fit-content;
-  
 }
-
 
 .btn {
   background: #0e0e0e;
@@ -121,35 +111,42 @@ body {
   font-size: 1rem;
   width: fit-content;
   transition: 0.3s;
-  
+  margin-top: 15px;
 }
+
 .btn:hover {
   background: #a40909;
 }
+/*-----------------------------------*/
+.box-link {
+  text-decoration: none;   /* remove underline */
+  color: inherit;          /* inherit text color */
+  display: block;          /* make link cover the box */
+}
 
 
-/* Image is fixed to the right */
+
+
+
+/* ================= Illustration (Left Card Image) ================= */
 .illustration {
   position: absolute;
-  right: -211px;
-  top: -44px;
-
-  
-  padding-top: 390px;
+  right: -150px;
+  top: -40px;
   z-index: 1;
-  padding-right: 10px;
-
 }
-.rotate {
-  transform: rotate(320deg); /* rotates image 45 degrees */
-}
-
 
 .illustration img {
   max-width: 100%;
-  height: 600px;
+  height: auto;
+  max-height: 500px;
   object-fit: contain;
+  position: relative;
+  top: 320px;
+}
 
+.rotate {
+  transform: rotate(320deg);
 }
 
 /* Right Cards */
@@ -158,7 +155,6 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
-
 
 .box {
   border-radius: 20px;
@@ -182,55 +178,36 @@ body {
   border-radius: 15px;
   padding: 25px;
   color: #fff;
-  position: relative;   /* allows absolute positioning */
+  position: relative;
   min-height: 360px;
   overflow: hidden;
 }
 
-/* Dark overlay for readability */
 .box.orange::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4); 
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   z-index: 0;
 }
 
-/* Text + button stay above overlay */
-.box.orange h3{
-    position: relative;
+.box.orange h3 {
+  position: relative;
   z-index: 1;
-   font-size: 25px;
+  font-size: 25px;
 }
-.box.orange p{
-    position:absolute;
-    bottom: 90px;
-    font-size: 18px;
-    
-    
+
+.box.orange p {
+  position: absolute;
+  bottom: 90px;
+  font-size: 18px;
   z-index: 1;
- 
 }
+
 .box.orange .btn {
   position: relative;
   z-index: 1;
-  
-  
-
-}
-
-/* Button styling */
-.btn {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #c60909;   /* red button */
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .btn:hover {
@@ -238,9 +215,8 @@ body {
   transform: translateY(-3px);
 }
 
-
 .black {
-  background:rgb(9, 8, 8);
+  background: rgb(9, 8, 8);
   color: #fff;
   font-size: 1.2rem;
 }
@@ -250,6 +226,7 @@ body {
   align-items: center;
   margin-top: 15px;
 }
+
 .avatars img {
   width: 35px;
   height: 35px;
@@ -257,14 +234,130 @@ body {
   margin-right: -10px;
   border: 2px solid #fff;
 }
+
 .avatars span {
   margin-left: 15px;
   font-size: 0.9rem;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+/* ================= Tablet ================= */
+@media (max-width: 1024px) {
   .hero {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem 1rem;
+  }
+
+  .hero-left {
+    padding: 2rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 2.2rem;
+    max-width: 100%;
+  }
+
+  .illustration {
+    position: static;
+    margin: 1.5rem auto 0;
+    text-align: center;
+  }
+
+  .illustration img {
+    max-height: 300px;
+  }
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 600px) {
+  .navbar {
+    grid-template-columns: auto auto auto; /* logo | login | hamburger */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    order: 1; /* logo first */
+  }
+
+  .nav-actions {
+    order: 2; /* login button second */
+  }
+
+  .menu-toggle {
+    order: 3; /* hamburger third */
+  }
+
+  nav {
+    order: 4; /* nav links collapse below */
+    width: 100%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .login-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  /* Left Card Image Responsive */
+  .illustration {
+    position: relative;
+    right: 20px;
+    left: 20px;
+    bottom: 50px;
+    margin: 1rem auto 0;
+    text-align: center;
+  }
+
+  .illustration img {
+    max-width: 100%;
+    height: 380px;;
+    /* max-height: 350px; */
+    top: 60px;
+    position:relative;
+    left: 40px;
+
+  }
+
+  .hero-left {
+    text-align: center;
+    height: auto;
+  }
+}
+
+/* ================= Hamburger ================= */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: #111;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(236, 235, 235);
+    gap: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .navbar ul.show {
+    display: flex;
+    max-height: 500px; /* slide down */
   }
 }
