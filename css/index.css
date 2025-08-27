@@ -174,7 +174,7 @@ body {
 
 /* Background image box */
 .box.orange {
-  background: url("/images/pexels-fauxels-3184360.jpg") no-repeat center center;
+  background: url("../images/pexels-fauxels-3184360.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 15px;
   padding: 25px;
