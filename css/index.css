@@ -165,6 +165,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .box:hover {
@@ -181,6 +182,7 @@ body {
   position: relative;
   min-height: 360px;
   overflow: hidden;
+  
 }
 
 .box.orange::before {
@@ -219,6 +221,7 @@ body {
   background: rgb(9, 8, 8);
   color: #fff;
   font-size: 1.2rem;
+  
 }
 
 .avatars {
