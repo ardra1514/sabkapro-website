@@ -22,9 +22,22 @@ body {
   z-index: 10;
 }
 
+.logo {
+  display: flex;
+  align-items: center;   /* keeps image and text in the same straight line */
+  gap: 10px;             /* space between logo and text */
+}
+
 .logo img {
-  height: 70px;
+  height: 60px;          /* adjust to keep both aligned nicely */
   width: auto;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;           /* white text for dark navbar */
+  letter-spacing: 1px;
 }
 
 .navbar ul {
@@ -397,6 +410,7 @@ body {
     order: 1; /* logo first */
     padding-right: 60px;
   }
+  
 
   .nav-actions {
     order: 2; /* login button second */
