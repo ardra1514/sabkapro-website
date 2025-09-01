@@ -395,7 +395,7 @@ body {
 
   .logo {
     order: 1; /* logo first */
-    padding-right: 130px;
+    padding-right: 60px;
   }
 
   .nav-actions {
@@ -405,6 +405,7 @@ body {
 
   .menu-toggle {
     order: 3; /* hamburger third */
+    padding-right: 30px;
     
   }
 
