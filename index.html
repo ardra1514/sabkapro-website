@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabka Pro </title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">  
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo sabka.png" alt="Fiscal Logo">
+    </div>
+
+    <!-- Nav links (stay in middle for desktop, collapse for mobile) -->
+    <nav>
+      <ul id="nav-links">
+        <li><a href="#"><b>Home</b></a></li>
+        <li><a href="#"><b>About Us</b></a></li>
+        <li><a href="#"><b>Sabka World</b></a></li>
+        <li><a href="#"><b>Emforx Solution</b></a></li>
+        <li><a href="#"><b>Contact Us</b></a></li>
+      </ul>
+    </nav>
+
+    <!-- Login Button -->
+    <div class="nav-actions">
+      <a href="./login.html" class="login-btn">Login </a>
+      
+    </div>
+
+    <!-- Hamburger Menu Icon -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Left Card -->
+    <div class="hero-left">
+      <span class="badge">Next group starts in 3 days!</span>
+      <div class="hero-content">
+        <div class="text-block">
+          <h1>Book Your Seats NOW</h1>
+          <button class="btn">Get started →</button>
+        </div>
+        <div class="illustration">
+          <img src="images/WhatsApp Image 2025-08-22 at 16.32.44_393a43db.jpg" class="rotate" alt="Finance Illustration">
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Cards -->
+    <div class="hero-right">
+  <a href="./registration.html" class="box-link">
+    <div class="box orange" id="bookSeat">
+      <h3><b>Employee</b></h3>
+      <p>Welcome to the Employee Portal</p>
+      <span class="btn">Click Here</span>
+    </div>
+  <br>
+
+      <div class="box black" id="signUp">
+        <h3>Candidate</h3>
+        
+        <div class="avatars">
+
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+          <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="">
+          <span>+56 mentors</span>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Why Choose Section -->
+<section class="why-choose">
+  <h2>Why Choose Sabka Pro?</h2>
+  <p>Experience the difference with our comprehensive platform designed for success</p>
+
+  <div class="features">
+    <div class="feature-box">
+      <div class="icon blue"><i class="fas fa-shield-alt"></i></div>
+      <h3>Verified Profiles</h3>
+      <p>All candidates and employers go through rigorous verification process</p>
+    </div>
+
+    <div class="feature-box">
+      <div class="icon green"><i class="fas fa-users"></i></div>
+      <h3>Skilled Candidates</h3>
+      <p>Access to pre-screened, trained professionals across industries</p>
+    </div>
+
+    <div class="feature-box">
+      <div class="icon purple"><i class="fas fa-building"></i></div>
+      <h3>Trusted Employers</h3>
+      <p>Connect with verified companies offering genuine opportunities</p>
+    </div>
+
+    <div class="feature-box">
+      <div class="icon orange"><i class="fas fa-award"></i></div>
+      <h3>Professional Training</h3>
+      <p>Comprehensive skill development programs for career advancement</p>
+    </div>
+
+    <div class="feature-box">
+      <div class="icon red"><i class="fas fa-clock"></i></div>
+      <h3>Quick Placement</h3>
+      <p>Fast-track hiring process with AI-powered matching algorithms</p>
+    </div>
+
+    <div class="feature-box">
+      <div class="icon violet"><i class="fas fa-bullseye"></i></div>
+      <h3>Career Guidance</h3>
+      <p>Personalized mentorship and career counseling services</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- JS -->
+  <script>
+    document.getElementById("bookSeat").addEventListener("click", () => {
+      window.location.href = "/book-seat";
+    });
+
+    document.getElementById("signUp").addEventListener("click", () => {
+      window.location.href = "/sign-up";
+    });
+
+    document.querySelector(".login-btn").addEventListener("click", () => {
+      window.location.href = "/login";
+    });
+
+    // ✅ Hamburger toggle
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
