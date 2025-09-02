@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <section class="pricing-section">
+    <h1 class="main-title">Choose Your Plan</h1>
+    <p class="main-subtitle">Flexible pricing options designed for your success</p>
+
+    <!-- Tab Switcher -->
+    <div class="tab-buttons">
+<button class="tab-btn active" data-target="candidate-plans">
+  <i class="fa-solid fa-user"></i>
+  <span>For Candidates</span>
+</button>
+
+<button class="tab-btn" data-target="employer-plans">
+  <i class="fa-solid fa-building"></i>
+  <span>For Employers</span>
+</button>
+   </div>
+
+    <!-- Candidate Plans -->
+    <div class="plans-container candidate-plans active">
+      <div class="candidate-plan">
+        <h3>Free</h3>
+        <p class="price">₹0 <span>Forever</span></p>
+        <ul>
+          <li>✔ Basic profile creation</li>
+          <li>✔ Apply to 5 jobs per month</li>
+          <li>✔ Email notifications</li>
+          <li>✔ Community access</li>
+          <li>✔ Basic resume tips</li>
+        </ul>
+        <button class="get-btn">Get Started Free</button>
+      </div>
+
+      <div class="candidate-plan highlight">
+        <div class="badge">⭐ Most Popular</div>
+        <h3>Pro</h3>
+        <p class="price">₹999 <span>per month</span></p>
+        <ul>
+          <li>✔ Premium profile with video intro</li>
+          <li>✔ Unlimited job applications</li>
+          <li>✔ Priority placement</li>
+          <li>✔ Personal career counselor</li>
+          <li>✔ Professional resume writing</li>
+          <li>✔ Interview preparation</li>
+          <li>✔Skill certification courses</li>
+          <li>✔WhatsApp support</li>
+        </ul>
+        <button class="pro-btn">Start Pro Trial</button>
+      </div>
+    </div>
+
+    <!-- Employer Plans -->
+    <div class="plans-container employer-plans">
+      <div class="employer-plan">
+        <h3>Starter</h3>
+        <p class="price">₹1999 <span>per month</span></p>
+        <ul>
+          <li>✔ Post up to 10 jobs</li>
+          <li>✔ Access candidate database</li>
+          <li>✔ Email support</li>
+          <li>✔ Standard supportt</li>
+
+        </ul>
+        <button class="get-btn">Start Pro Trial</button>
+
+      </div>
+
+      <div class="employer-plan highlight">
+        <div class="badge">⭐ Best Value</div>
+        <h3>Enterprise</h3>
+        <p class="price">₹4999 <span>per month</span></p>
+        <ul>
+          <li>✔ Unlimited job postings</li>
+          <li>✔ Featured listings</li>
+          <li>✔ Advanced candidate filtering</li>
+          <li>✔ Dedicated account manager</li>
+          <li>✔Video interview scheduling</li>
+          <li>✔ Bulk candidate messaging</li>
+          <li>✔ Analytics dashboard</li>
+          <li>✔ WhatsApp & phone support</li>
+
+        </ul>
+        <button class="pro-btn">Start Pro Trial</button>
+
+      </div>
+    </div>
+
+  </section>
+
+  <script >
+    const tabs = document.querySelectorAll(".tab-btn");
+const containers = document.querySelectorAll(".plans-container");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    // Remove active class from all
+    tabs.forEach(t => t.classList.remove("active"));
+    containers.forEach(c => c.classList.remove("active"));
+
+    // Add active class to clicked tab + its target container
+    tab.classList.add("active");
+    document.querySelector("." + tab.dataset.target).classList.add("active");
+  });
+});
+
+  </script>
+</body>
+
+</html>

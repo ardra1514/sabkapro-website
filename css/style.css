@@ -602,3 +602,171 @@ footer {
 .contact-us p:last-child {
   margin-bottom: 0; /* Remove space after the last paragraph */
 }
+
+
+
+/* ================================================================= */
+
+.pricing-section {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #fff;
+  text-align: center;
+   width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+ 
+}
+
+.main-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.main-subtitle {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+/* Tabs */
+.tab-buttons {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     /* center buttons horizontally */
+  justify-content: flex-start; /* remove extra vertical spacing */
+  margin: 0 auto 10px auto;
+  background: #1e293b;
+  border-radius: 10px;
+  width: 220px;   /* narrower */
+  padding: 8px;   /* small padding */
+  gap: 6px;       /* smaller gap between buttons */
+}
+
+
+.tab-btn {
+  display: flex;          /* align icon + text horizontally */
+  align-items: center;    /* vertical center alignment */
+  justify-content: center;
+  gap: 8px;               /* equal spacing between icon and text */
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 2px;
+}
+
+.tab-btn i {
+  font-size: 1.2rem;   /* adjust icon size to match text */
+  line-height: 1;      /* prevent misalignment */
+}
+
+
+.tab-btn.active {
+  background: #334155;
+  color: rgb(180, 128, 223);
+  font-weight: bold;
+}
+
+/* Plans */
+.plans-container {
+  display: none;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.plans-container.active {
+  display: flex;
+}
+
+.candidate-plan,
+.employer-plan {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 30px;
+  width: 450px;
+  height: 600px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s;
+  border: 2.5px solid #334155;
+  margin-top: 30px;
+}
+.candidate-plan h3,
+.candidate-plan .price,
+.employer-plan h3,
+.employer-plan .price {
+  text-align: center;
+      font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.candidate-plan:hover,
+.employer-plan:hover {
+  transform: translateY(-5px);
+}
+
+/* Pricing */
+.price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.price span {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #cbd5e1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+
+ul li {
+  font-size: 1.1rem;      /* larger text */
+  margin-bottom: 16px;    /* more space between items */
+  line-height: 1.6; 
+  color: #D1D5DB;      /* improves readability */
+}
+
+.candidate-plan .get-btn,
+.employer-plan .get-btn {
+  background-color: #334155;
+  margin-top: 40px;
+  padding: 20px;
+  height: 60px;
+}
+.candidate-plan .pro-btn,
+.employer-plan .pro-btn{
+  background-color: rgb(118, 69, 157);
+  margin-top: 40px;
+  padding: 20px;
+  height: 60px;
+  
+}
+/* Highlights */
+.highlight {
+  border: 2px solid rgb(118, 69, 157);
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: rgb(118, 69, 157);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
