@@ -691,6 +691,7 @@ body {
   width: 220px;   /* narrower */
   padding: 8px;   /* small padding */
   gap: 6px;       /* smaller gap between buttons */
+  
 }
 
 
@@ -705,9 +706,10 @@ body {
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 8px;
-  cursor: pointer;
+  cursor:pointer;
   transition: background 0.3s;
   margin-top: 2px;
+  
 }
 
 .tab-btn i {
@@ -718,8 +720,9 @@ body {
 
 .tab-btn.active {
   background: #334155;
-  color: rgb(180, 128, 223);
+  color: rgb(118, 69, 157);
   font-weight: bold;
+  
 }
 
 /* Plans */
@@ -776,14 +779,15 @@ body {
   color: #cbd5e1;
 }
 
-ul {
+.planlist {
   list-style: none;
   padding: 0;
   margin: 0;
   margin-top: 30px;
+  
 }
 
-ul li {
+.planlist li {
   font-size: 1.1rem;      /* larger text */
   margin-bottom: 16px;    /* more space between items */
   line-height: 1.6; 
@@ -792,10 +796,16 @@ ul li {
 
 .candidate-plan .get-btn,
 .employer-plan .get-btn {
-  background-color: #f6f6f6;
+  background-color: #334155;
   margin-top: 40px;
   padding: 20px;
   height: 60px;
+  width: 400px;
+  border-radius: 5px;
+  border: none;
+  color: #cbd5e1;
+   font-size: 15px;
+
 }
 .candidate-plan .pro-btn,
 .employer-plan .pro-btn{
@@ -803,7 +813,11 @@ ul li {
   margin-top: 40px;
   padding: 20px;
   height: 60px;
-  
+  width: 400px;
+   border-radius: 5px;
+  border: none;
+   color: #cbd5e1;
+   font-size: 15px;
 }
 /* Highlights */
 .highlight {
