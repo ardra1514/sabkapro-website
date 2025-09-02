@@ -807,6 +807,15 @@ body {
    font-size: 15px;
 
 }
+.candidate-plan .get-btn:hover,
+.employer-plan .get-btn:hover {
+  background-color: #475569; /* slightly lighter slate shade */
+  color: #fff;              /* brighter text */
+  cursor: pointer;
+  transform: translateY(-3px); /* small lift effect */
+  transition: all 0.3s ease;  /* smooth transition */
+}
+
 .candidate-plan .pro-btn,
 .employer-plan .pro-btn{
   background-color: rgb(118, 69, 157);
@@ -819,6 +828,15 @@ body {
    color: #cbd5e1;
    font-size: 15px;
 }
+.candidate-plan .pro-btn:hover,
+.employer-plan .pro-btn:hover {
+  background-color: rgb(147, 89, 187); /* lighter purple shade */
+  color: #fff;                        /* brighter text */
+  cursor: pointer;
+  transform: translateY(-3px);        /* subtle lift */
+  transition: all 0.3s ease;          /* smooth effect */
+}
+
 /* Highlights */
 .highlight {
   border: 2px solid rgb(118, 69, 157);
