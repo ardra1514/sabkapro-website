@@ -403,7 +403,7 @@ body {
 /* ================= Mobile ================= */
 @media (max-width: 600px) {
   .navbar {
-    grid-template-columns: auto auto auto; /* logo | login | hamburger */
+    grid-template-columns: left center right; /* logo | login | hamburger */
     justify-content: space-between;
     align-items: center;
     
@@ -411,7 +411,7 @@ body {
 
   .logo {
     order: 1; /* logo first */
-    padding-right: 30px;
+    padding-right: 5px;
   }
   
 
@@ -423,7 +423,7 @@ body {
   .menu-toggle {
     order: 3; /* hamburger third */
     position: relative;
-    right: 50px;
+    right: 70px;
     
   }
 
