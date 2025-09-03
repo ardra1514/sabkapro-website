@@ -4,10 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", Arial, sans-serif;
+  max-width: 100%;
 }
 
 body {
   background-color:#0f172a;
+  max-width: 100%;
 }
 
 /* Navbar */
