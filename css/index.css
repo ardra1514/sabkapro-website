@@ -881,3 +881,108 @@ body {
   border-radius: 20px;
   font-size: 0.8rem;
 }
+
+
+
+
+/* Tablet and below */
+@media (max-width: 991px) {
+  nav ul {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #0f172a;
+    flex-direction: column;
+    width: 220px;
+    padding: 15px;
+    gap: 15px;
+    display: none;
+  }
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* Logo resize */
+  .logo img {
+    height: 34px;
+  }
+  .logo-text {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile (<=468px) */
+@media (max-width: 468px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    height: 28px;   /* compact logo */
+  }
+  .logo-text {
+    font-size: 14px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+  .nav-actions .login-btn {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  .menu-toggle {
+    font-size: 22px;
+  }
+
+  nav ul {
+    width: 180px; /* slimmer dropdown */
+    padding: 12px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+
+
+/* Right side: Login + Toggle grouped */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;   /* spacing between login + toggle */
+}
+
+.nav-actions .login-btn {
+  background: rgb(118, 69, 157);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+.nav-actions .login-btn:hover {
+  background: #8b5fc6;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none; /* hidden desktop, show mobile */
+}
+
+/* Show toggle on mobile */
+@media (max-width: 991px) {
+  .menu-toggle {
+    display: block;
+  }
+}
