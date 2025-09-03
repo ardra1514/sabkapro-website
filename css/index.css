@@ -26,10 +26,11 @@ body {
   display: flex;
   align-items: center;   /* keeps image and text in the same straight line */
   gap: 10px;             /* space between logo and text */
+  padding-left: 50px;
 }
 
 .logo img {
-  height: 60px;          /* adjust to keep both aligned nicely */
+  height: 50px;          /* adjust to keep both aligned nicely */
   width: auto;
 }
 
@@ -59,6 +60,7 @@ body {
 
 .nav-actions {
   text-align: right;
+  padding-right:70px;
   
 }
 
@@ -71,6 +73,7 @@ body {
   cursor: pointer;
   font-weight: 500;
   transition: all 0.3s ease;
+  
 
 }
 
@@ -408,7 +411,7 @@ body {
 
   .logo {
     order: 1; /* logo first */
-    padding-right: 60px;
+    padding-right: 30px;
   }
   
 
@@ -419,7 +422,8 @@ body {
 
   .menu-toggle {
     order: 3; /* hamburger third */
-    padding-right: 30px;
+    position: relative;
+    right: 50px;
     
   }
 
