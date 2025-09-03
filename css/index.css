@@ -413,9 +413,32 @@ body {
 
   .logo {
     order: 1; /* logo first */
-    padding-right: 5px;
+
   }
-  
+  /* Tablet screens */
+@media (max-width: 991px) {
+  .logo img {
+    height: 34px;   /* shrink logo */
+  }
+
+  .logo-text {
+    font-size: 16px; /* slightly smaller text */
+  }
+}
+
+/* Small mobile (<=468px) */
+@media (max-width: 468px) {
+  .logo img {
+    height: 28px;   /* even smaller */
+    
+  }
+
+  .logo-text {
+    font-size: 14px; /* smaller text */
+  }
+}
+
+
 
   .nav-actions {
     order: 2; /* login button second */
